@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'android-apt'
+apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 24
@@ -40,4 +42,12 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.2.0'
     //logger
     compile 'com.orhanobut:logger:1.15'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile project(':lib-utils')
+    //RecyclerView Adapter
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    //picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

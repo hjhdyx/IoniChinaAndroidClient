@@ -1,4 +1,4 @@
-package com.dyx.icac;
+package com.dyx.icac.lib;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
